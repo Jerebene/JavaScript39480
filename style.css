@@ -1,0 +1,117 @@
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.container-fluid {
+    background-color: red;
+}
+
+
+
+.enlacesContainer a {
+    color: white;
+    text-decoration: none;
+}
+
+.body {
+    background-color: grey;
+}
+
+
+
+/* Navbar */
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.enlacesContainer {
+    background-color: red;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* estilos en categoria de skins */
+
+.skinContainer {
+    background-color: blue;
+    width: 100%;
+}
+
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.categoryContainer {
+    background: #151719;
+    width: 20%;
+}
+
+.categoryContainer h2 {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 1.8rem;
+    border-bottom: 1px solid rgba(100, 100, 100, .3);
+}
+
+.categoryContainer a {
+    text-decoration: none;
+    color: rgba(230, 230, 230, .9);
+    
+    border-bottom: 1px solid rgba(100, 100, 100, .3);
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 1.2rem; 
+}
+
+
+
+/* estilos en lista de skins */
+
+.cardContainer {
+    width: 80%;
+    padding-left: 30px;
+    background-color: rgb(51, 50, 50);
+}
+
+.skinCard {
+    background-color: rgb(136, 133, 133);
+    border-radius:50px;
+
+}
+
+.cardName {
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.cardPrice {
+   text-align: center;
+   color: black;
+   font-size: 1.8rem;
+}
+
+.imgPortada {
+    display: flex;
+    justify-content: center;
+}
+
