@@ -21,9 +21,9 @@
 }
 
 .body {
-    background-color: grey;
+    background-color: black;
+    margin: 0px 50px;
 }
-
 
 
 /* Navbar */
@@ -38,18 +38,12 @@
 }
 
 .enlacesContainer {
-    background-color: red;
     width: 50%;
     display: flex;
     justify-content: space-around;
 }
 
 /* estilos en categoria de skins */
-
-.skinContainer {
-    background-color: blue;
-    width: 100%;
-}
 
 
 .category-item {
@@ -59,7 +53,7 @@
 }
 
 .categoryContainer {
-    background: #151719;
+    background: black;
     width: 20%;
 }
 
@@ -89,11 +83,11 @@
 .cardContainer {
     width: 80%;
     padding-left: 30px;
-    background-color: rgb(51, 50, 50);
+    background-color: rgba(0, 0, 0, 0.596);
 }
 
 .skinCard {
-    background-color: rgb(136, 133, 133);
+    background-color: rgb(233, 233, 233, .9);
     border-radius:50px;
 
 }

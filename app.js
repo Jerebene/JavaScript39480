@@ -10,12 +10,12 @@ class Skin {
     }
 }
 
-const Pistolas = document.getElementById("Pistolas")
-    Pistolas.addEventListener("click", () => {
-        let filterSkins = listaSkins.filter(skin => skin.categoria == "Pistolas")
+// const Pistolas = document.getElementById("Pistolas")
+//     Pistolas.addEventListener("click", () => {
+//         let filterSkins = listaSkins.filter(skin => skin.categoria == "Pistolas")
 
-        console.log(filterSkins)
-    })
+//         console.log(filterSkins)
+//     })
 
 
     const listaSkins = [
@@ -61,13 +61,11 @@ if (localStorage.getItem("cartList")) {
 }
 
 
-
-
   // Lista de productos en tienda
 
 listaSkins.forEach(Skin => {
     cardContainer.innerHTML += `
-    <div class="skinCard" style="width: 14rem;">
+    <div class="skinCard" style="width: 10rem;">
             <img src="${Skin.img}" class="card-img-top" alt="">
             <div class="card-body">
                 <h5 class="cardName">${Skin.nombre}${Skin.estado}</h5>
