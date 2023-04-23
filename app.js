@@ -67,10 +67,10 @@ listaSkins.forEach(Skin => {
     cardContainer.innerHTML += `
     <div class="skinCard" style="width: 10rem;">
             <img src="${Skin.img}" class="card-img-top" alt="">
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
                 <h5 class="cardName">${Skin.nombre}${Skin.estado}</h5>
                 <p class="cardPrice">$${Skin.precio}</p>
-                <a href="#" id="skin-${Skin.id}" class="cardButton btn btn-outline-success ";">Comprar</a>
+                <a href="#" id="skin-${Skin.id}" class="cardButton btn btn-outline-success w-60 m-auto mb-2 ";">Comprar</a>
             </div>
          </div>
     `

@@ -46,9 +46,19 @@
 /* estilos en categoria de skins */
 
 
-.category-item {
+.categoryButton {
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    padding: 15px 10px;
+    font-size: 1.2rem; 
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(100, 100, 100, .3);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    
     
 }
 
@@ -64,16 +74,6 @@
     padding: 20px 10px;
     font-size: 1.8rem;
     border-bottom: 1px solid rgba(100, 100, 100, .3);
-}
-
-.categoryContainer a {
-    text-decoration: none;
-    color: rgba(230, 230, 230, .9);
-    
-    border-bottom: 1px solid rgba(100, 100, 100, .3);
-    padding: 15px 10px;
-    text-align: center;
-    font-size: 1.2rem; 
 }
 
 
