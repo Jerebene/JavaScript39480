@@ -32,7 +32,8 @@
                     <a href="#">Contacto</a>
                 </div>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
                     <i class="fa-solid fa-cart-shopping"></i>
                 </button>
             </div>
@@ -49,20 +50,16 @@
         <section id="skinContainer" class="skinContainer d-flex">
             <div class="categoryContainer">
                 <h2 class="titulo-categorias">Categorias</h2>
-                <button class="categoryButton">Todo</button>
-                <button class="categoryButton">Pistolas</button>
-                <button class="categoryButton">Escopetas</button>
-                <button class="categoryButton">Sub Fusiles</button>
-                <button class="categoryButton">Rifles</button>
-                <button class="categoryButton">Cuchillos</button>
-                <button class="categoryButton">Guantes</button>
-                <!-- <a href="#" class="category-item">Todo</a>
-                <a href="#" class="category-item">Pistolas</a>
-                <a href="#" class="category-item">Escopetas</a>
-                <a href="#" class="category-item">Sub Fusiles</a>
-                <a href="#" class="category-item">Rifles</a>
-                <a href="#" class="category-item">Cuchillos</a>
-                <a href="#" class="category-item">Guantes</a> -->
+                <div id="buttons">
+                    <button class="categoryButton" onclick="filterSkins('Todo')">Todo</button>
+                    <button class="categoryButton" onclick="filterSkins('Pistolas')">Pistolas</button>
+                    <button class="categoryButton" onclick="filterSkins('Escopetas')">Escopetas</button>
+                    <button class="categoryButton" onclick="filterSkins('SubFusiles')">SubFusiles</button>
+                    <button class="categoryButton" onclick="filterSkins('Rifles')">Rifles</button>
+                    <button class="categoryButton" onclick="filterSkins('Cuchillos')">Cuchillos</button>
+                    <button class="categoryButton" onclick="filterSkins('Guantes')">Guantes</button>
+                </div>
+
             </div>
             <div id="cardContainer" class="cardContainer d-flex flex-wrap gap-3 ">
 
@@ -79,10 +76,11 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body" id="cartContainer">
-                            
+
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir comprando</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                                comprando</button>
                             <button type="button" class="btn btn-primary">Confirmar Compra</button>
                         </div>
                     </div>

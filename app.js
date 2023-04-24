@@ -23,7 +23,7 @@ class Skin {
         new Skin(2, "M4A4 | Emperador", 2100, "./Assets/img/ak47.png", 0.1657, " (Field Tested)", "Rifles"),
         new Skin(3, "USP | Muerte confirmada", 2200, "./Assets/img/ak47.png", 1.9463, " (Factory New)", "Rifles"),
         new Skin(4, "AK47 | Legión de Anubis", 2000, "./Assets/img/ak47.png", 0.0053, " (Minimal Wear)","Pistolas"),
-        new Skin(5, "M4A4 | Emperador", 2100, "./Assets/img/ak47.png", 0.1657, " (Well Worn)", "Sub fusiles"),
+        new Skin(5, "M4A4 | Emperador", 2100, "./Assets/img/ak47.png", 0.1657, " (Well Worn)", "SubFusiles"),
         new Skin(6, "USP | Muerte confirmada", 2200, "./Assets/img/ak47.png", 1.9463, " (Battle Scarred)","Pistolas"),
 ]
  
@@ -65,9 +65,9 @@ if (localStorage.getItem("cartList")) {
 
 listaSkins.forEach(Skin => {
     cardContainer.innerHTML += `
-    <div class="skinCard" style="width: 10rem;">
+    <div class="skinCard hide card-body ${Skin.categoria}" style="max-width: 10rem; max-height: 21.2rem">
             <img src="${Skin.img}" class="card-img-top" alt="">
-            <div class="card-body d-flex flex-column">
+            <div class=" d-flex flex-column">
                 <h5 class="cardName">${Skin.nombre}${Skin.estado}</h5>
                 <p class="cardPrice">$${Skin.precio}</p>
                 <a href="#" id="skin-${Skin.id}" class="cardButton btn btn-outline-success w-60 m-auto mb-2 ";">Comprar</a>
@@ -109,3 +109,37 @@ listaSkins.forEach(Skin => {
 
     })
 })
+
+function filterSkins(value) {
+    let buttons = document.querySelectorAll(".categoryButton")
+
+    buttons.forEach((button) => {
+        if (value.toUpperCase() == button.innerText.toUpperCase()) {
+            button.classList.add("active")
+        } else {
+            button.classList.remove("active")
+        }
+    })
+
+    let elementos = document.querySelectorAll(".card-body")
+
+    elementos.forEach((elemento) => {
+        console.log(elemento)
+        if (value == "Todo") {
+            elemento.classList.remove("hide")
+        } else {
+            if (elemento.classList.contains(value)) {
+                elemento.classList.remove("hide")
+            } else {
+                elemento.classList.add("hide")
+            }
+
+        }
+    })
+
+}
+
+window.onload = () => {
+    filterSkins("Todo")
+    button.classList.remove("active")
+}

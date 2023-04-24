@@ -58,9 +58,18 @@
     border-left: none;
     border-right: none;
     border-top: none;
-    
-    
+    cursor: pointer;
 }
+
+.active {
+    background-color: red;
+    color: black;
+}
+
+.hide {
+    display: none;
+}
+
 
 .categoryContainer {
     background: black;
@@ -108,4 +117,3 @@
     display: flex;
     justify-content: center;
 }
-
